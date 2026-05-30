@@ -31,7 +31,7 @@ const modules = [
   {
     title: "O primeiro capítulo",
     description:
-      "Você sabia que é nessa parte que muitas editoras decidem se vão seguir ou não com a leitura da sua história e com uma possível publicação? É por isso que esse módulo te ajuda a entender o que colocar no primeiro capítulo, além de explicar como você pode montar seu book proposal.",
+      "Você sabia que é nessa parte que muitas editoras decidem se vão seguir ou não com a leitura da sua história e com uma possível publicação? É por isso que esse módulo te ajuda a entender o que colocar no primeiro capítulo.",
   },
   {
     title: "Viradas narrativas",
