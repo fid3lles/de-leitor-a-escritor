@@ -2,4 +2,30 @@
 
 @theme {
   --color-cream: #f5dca2;
+  --color-dark-section: #243131;
+  --color-module-card: #475f5f;
+
+  --font-sans: 'Ubuntu', system-ui, sans-serif;
+  --font-serif: 'Young Serif', Georgia, serif;
+}
+
+@theme {
+  --animate-breathe: breathe 3.8s ease-in-out infinite;
+}
+
+@keyframes breathe {
+  0%, 100% { transform: scale(1); }
+  50%       { transform: scale(1.06); }
+}
+
+@layer base {
+  html {
+    background-color: var(--color-cream);
+  }
+  body {
+    font-family: var(--font-sans);
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif);
+  }
 }
