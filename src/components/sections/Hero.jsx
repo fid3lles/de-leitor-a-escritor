@@ -1,10 +1,13 @@
-import logo from "../../assets/logo.png";
+import logo from "../../assets/logo.webp";
 import BackgroundPattern from "../BackgroundPattern";
 import PrimaryAddon from "../PrimaryAddon";
 
 export default function Hero() {
   return (
-    <section aria-label="Apresentação" className="relative h-screen overflow-hidden bg-cream flex flex-col items-center justify-between px-6 py-10 md:py-16 md:max-h-[80vh]">
+    <section
+      aria-label="Apresentação"
+      className="relative h-screen overflow-hidden bg-cream flex flex-col items-center justify-between px-6 py-10 md:py-16 md:max-h-[80vh]"
+    >
       <BackgroundPattern />
 
       {/* Topo — Logo */}

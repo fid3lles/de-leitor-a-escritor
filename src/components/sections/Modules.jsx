@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import PrimaryAddon from "../PrimaryAddon";
-import professora from "../../assets/heloisa.png";
+import professora from "../../assets/heloisa.webp";
 
 const modules = [
   {
