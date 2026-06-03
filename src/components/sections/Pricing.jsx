@@ -61,7 +61,7 @@ export default function Pricing() {
         }}
       />
 
-      <div className="relative z-10 flex flex-col items-center gap-6 w-full max-w-xs">
+      <div className="relative z-10 flex flex-col items-center gap-6 w-full max-w-xs md:max-w-sm">
         <h2 className="text-3xl font-bold text-center text-white">
           Investimento
         </h2>

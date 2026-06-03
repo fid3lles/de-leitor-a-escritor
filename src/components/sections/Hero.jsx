@@ -4,20 +4,21 @@ import PrimaryAddon from "../PrimaryAddon";
 
 export default function Hero() {
   return (
-    <section className="relative h-[100vh] overflow-hidden bg-cream flex flex-col items-center justify-between px-6 py-10">
+    <section aria-label="Apresentação" className="relative h-screen overflow-hidden bg-cream flex flex-col items-center justify-between px-6 py-10 md:py-16 md:max-h-[80vh]">
       <BackgroundPattern />
 
       {/* Topo — Logo */}
       <div className="relative z-10 flex justify-center">
+        <h1 className="sr-only">De Leitor a Escritor</h1>
         <img
           src={logo}
           alt="De Leitor a Escritor"
-          className="w-72 max-w-full drop-shadow-md animate-breathe"
+          className="w-72 max-w-full drop-shadow-md animate-breathe md:w-105"
         />
       </div>
 
       {/* Meio — Texto com aspas */}
-      <div className="relative z-10 w-full max-w-sm text-center">
+      <div className="relative z-10 w-full max-w-sm text-center md:max-w-xl">
         <span
           aria-hidden="true"
           className="absolute -top-4 left-0 font-serif text-6xl leading-none select-none text-amber-800/25"
@@ -45,7 +46,7 @@ export default function Hero() {
       <PrimaryAddon className="text-amber-950/80" />
 
       {/* Base — Título dividido pelo SVG + Vídeo */}
-      <div className="relative z-10 w-full max-w-sm flex flex-col items-center gap-4">
+      <div className="relative z-10 w-full max-w-sm flex flex-col items-center gap-4 md:max-w-3xl">
         <h2 className="flex flex-col items-center gap-2 text-center text-xl font-semibold leading-snug text-amber-950/80">
           Assista o vídeo abaixo de 1:15 minutos para conhecer todas as trilhas.
         </h2>

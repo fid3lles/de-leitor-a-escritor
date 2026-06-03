@@ -40,7 +40,7 @@ const modules = [
   },
 ];
 
-function ModuleCard({ title, description, index }) {
+function ModuleCard({ title, description, index, className = "" }) {
   const ref = useRef(null);
   const [visible, setVisible] = useState(false);
 
@@ -63,7 +63,7 @@ function ModuleCard({ title, description, index }) {
   return (
     <div
       ref={ref}
-      className="relative z-10 w-full rounded-2xl bg-module-card px-6 py-5 shadow-[0_6px_20px_rgba(0,0,0,0.35)] text-center transition-all duration-700 ease-out"
+      className={`relative z-10 w-full rounded-2xl bg-module-card px-6 py-5 shadow-[0_6px_20px_rgba(0,0,0,0.35)] text-center transition-all duration-700 ease-out ${className}`}
       style={{
         opacity: visible ? 1 : 0,
         transform: visible ? "translateY(0)" : "translateY(20px)",
@@ -147,7 +147,7 @@ export default function Modules() {
       />
 
       {/* Content */}
-      <div className="relative z-10 mx-auto flex max-w-xl flex-col items-center gap-8">
+      <div className="relative z-10 mx-auto flex max-w-xl flex-col items-center gap-8 md:max-w-4xl">
         <div className="flex flex-col items-center gap-3">
           <h2 className="text-3xl font-bold text-center">Os módulos</h2>
           <PrimaryAddon
@@ -157,18 +157,31 @@ export default function Modules() {
         </div>
 
         {/* Cards + dotted connecting line */}
-        <div className="relative flex w-full flex-col items-stretch gap-7">
+        <div className="relative grid w-full grid-cols-1 gap-7 md:grid-cols-2">
           <div
-            className="absolute left-1/2 top-0 bottom-0 z-0 -translate-x-1/2"
+            className="absolute left-1/2 top-0 bottom-0 z-0 -translate-x-1/2 md:hidden"
             style={{
               width: "2px",
               backgroundImage:
                 "repeating-linear-gradient(to bottom, var(--color-cream) 0, var(--color-cream) 3px, transparent 3px, transparent 10px)",
             }}
           />
-          {modules.map((mod, i) => (
-            <ModuleCard key={i} {...mod} index={i} />
-          ))}
+          {modules.map((mod, i) => {
+            const isLastOdd =
+              i === modules.length - 1 && modules.length % 2 === 1;
+            return (
+              <ModuleCard
+                key={i}
+                {...mod}
+                index={i}
+                className={
+                  isLastOdd
+                    ? "md:col-span-2 md:justify-self-center md:w-1/2"
+                    : ""
+                }
+              />
+            );
+          })}
         </div>
 
         {/* Professora */}
@@ -182,7 +195,7 @@ export default function Modules() {
             bgColor="var(--color-dark-section)"
           />
 
-          <div className="w-full max-w-sm overflow-hidden rounded-3xl shadow-2xl">
+          <div className="w-full max-w-sm overflow-hidden rounded-3xl shadow-2xl md:max-w-md">
             <div className="h-105 w-full">
               <img
                 src={professora}

@@ -3,13 +3,13 @@ import PrimaryAddon from "../PrimaryAddon";
 
 export default function Doubt() {
   return (
-    <section className="bg-cream px-6 py-20 flex flex-col items-center gap-8 rounded-t-3xl overflow-hidden">
+    <section className="bg-cream px-6 py-20 flex flex-col items-center gap-8 rounded-t-3xl overflow-hidden md:px-12 md:py-28">
       <h2 className="text-3xl font-bold text-amber-950 text-center">
         Ainda em dúvida?
       </h2>
       <PrimaryAddon className="text-amber-950/80" />
       <p
-        className="max-w-sm text-amber-950/70"
+        className="max-w-sm text-amber-950/70 md:max-w-lg"
         style={{
           fontSize: "18px",
           fontWeight: 600,
@@ -22,7 +22,7 @@ export default function Doubt() {
         método de ensino.
       </p>
 
-      <div className="w-full max-w-xl overflow-hidden rounded-xl shadow-xl aspect-video">
+      <div className="w-full max-w-xl overflow-hidden rounded-xl shadow-xl aspect-video md:max-w-3xl">
         <iframe
           className="h-full w-full"
           src="https://www.youtube.com/embed/UCkWmVpjWYE?si=lr5VT4k3lfSbx98A"

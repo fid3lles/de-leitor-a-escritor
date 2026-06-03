@@ -8,7 +8,7 @@ export default function InstagramFeed() {
   }, [])
 
   return (
-    <div className="w-full flex justify-center shadow-[0_6px_20px_rgba(0,0,0,0.15)] rounded-sm [&_.instagram-media]:m-0!">
+    <div className="w-full flex justify-center [&_.instagram-media]:m-0!">
       <blockquote
         className="instagram-media"
         data-instgrm-permalink="https://www.instagram.com/p/DQmaR4yjj1n/?utm_source=ig_embed&utm_campaign=loading"
