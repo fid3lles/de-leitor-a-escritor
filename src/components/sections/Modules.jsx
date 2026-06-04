@@ -34,9 +34,9 @@ const modules = [
       "Você sabia que é nessa parte que muitas editoras decidem se vão seguir ou não com a leitura da sua história e com uma possível publicação? É por isso que esse módulo te ajuda a entender o que colocar no primeiro capítulo.",
   },
   {
-    title: "Viradas narrativas",
+    title: "Chaves narrativas",
     description:
-      "Um módulo para te ajudar a manter o ritmo da história e fisgar o leitor por meio de plots, foreshadowings, clímax e uma boa conclusão.",
+      "Um módulo para te ajudar a manter o ritmo da história e fisgar o leitor por meio de boas descrições, uso de cores e ambientes e flashbacks.",
   },
 ];
 
@@ -205,7 +205,7 @@ export default function Modules() {
             </div>
 
             <div
-              className="-mt-6 relative rounded-t-3xl px-6 pt-6 pb-12 border-t border-white/10"
+              className="-mt-6 relative rounded-3xl px-6 pt-6 pb-12 border-t border-white/10"
               style={{
                 backgroundColor:
                   "color-mix(in srgb, var(--color-module-card) 80%, transparent)",

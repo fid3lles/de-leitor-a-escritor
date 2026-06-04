@@ -17,22 +17,7 @@ const faqs = [
   {
     question: "Pra quem é o curso?",
     answer:
-      "Todos os que querem aprender a escrever de forma assertiva, a fazer personagens marcantes, a se portar de forma inesquecível nos eventos, a conduzir uma pré-venda com sucesso e perder o medo de produzir conteúdo.",
-  },
-  {
-    question: "E se eu tiver dúvidas?",
-    answer:
-      "Fique tranquilo! Teremos um encontro semanal com os alunos às terças-feiras, das 20h às 21h30, para tirar as dúvidas que surgirem ao longo do treinamento. Caso você não consiga participar, não se preocupe, pode encaminhar suas dúvidas para o e-mail: contatojornadadoescritor@gmail.com, e em até 10 dias elas serão respondidas.",
-  },
-  {
-    question: "Tem e-mail de contato?",
-    answer:
-      "Se você tiver algum problema NÃO decorrente da PLATAFORMA, entre em contato pelo e-mail: contatojornadadoescritor@gmail.com.",
-  },
-  {
-    question: "As aulas são ao vivo?",
-    answer:
-      "Não. Prezando pelo seu aproveitamento, nenhuma das aulas será ao vivo, todas as aulas são gravadas. Assim você pode assistir pelo tempo que quiser, no horário e dia que forem melhores para você!",
+      "Todos aqueles que querem escrever seu primeiro livro. Dos que já tiveram diversas ideias e nunca as colocaram no papel aos que começaram a pensar recentemente em como seria criar seus próprios mundos.",
   },
   {
     question: "Como acesso o treinamento?",
@@ -121,7 +106,12 @@ export default function FAQ() {
 
         <div className="flex flex-col gap-3 w-full">
           {faqs.map((faq, i) => (
-            <AccordionItem key={i} {...faq} open={openIndex === i} onToggle={() => toggle(i)} />
+            <AccordionItem
+              key={i}
+              {...faq}
+              open={openIndex === i}
+              onToggle={() => toggle(i)}
+            />
           ))}
         </div>
       </div>

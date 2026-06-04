@@ -49,7 +49,7 @@ export default function Pricing() {
   return (
     <section
       ref={sectionRef}
-      className="relative overflow-hidden bg-dark-section px-6 py-16 text-white flex flex-col items-center gap-6 rounded-t-3xl"
+      className="relative z-20 -mt-8 overflow-hidden bg-cream px-6 py-16 text-amber-950/80 flex flex-col items-center gap-6 rounded-t-3xl"
     >
       {/* Grain */}
       <div
@@ -62,23 +62,26 @@ export default function Pricing() {
       />
 
       <div className="relative z-10 flex flex-col items-center gap-6 w-full max-w-xs md:max-w-sm">
-        <h2 className="text-3xl font-bold text-center text-white">
+        <h2 className="text-3xl font-bold text-center text-amber-950">
           Investimento
         </h2>
 
         <PrimaryAddon
-          className="text-white"
-          bgColor="var(--color-dark-section)"
+          className="text-amber-950/80"
+          bgColor="var(--color-cream)"
         />
 
         {/* Price */}
         <div className="flex flex-col items-center gap-1">
-          <span className="text-8xl font-black tracking-tight text-white" style={{ lineHeight: 0.8 }}>
+          <span
+            className="text-8xl font-black tracking-tight text-amber-950"
+            style={{ lineHeight: 0.8 }}
+          >
             <span className="text-5xl align-top">R$</span> {price}
-            <span className="text-3xl">,00</span>
+            <span className="text-3xl">, 00</span>
           </span>
-          <span className="text-lg font-bold tracking-widest text-white/60">
-            12X 00,00
+          <span className="text-lg font-bold tracking-widest text-amber-950/60">
+            12x 10,03
           </span>
         </div>
 
@@ -96,16 +99,18 @@ export default function Pricing() {
         </div>
 
         {/* CTA button */}
-        <button
-          type="button"
-          className="mt-4 w-full rounded-full bg-module-card py-5 text-sm font-black tracking-widest uppercase text-white animate-breathe active:scale-95 cursor-pointer"
+        <a
+          href="https://pay.hotmart.com/B105616878D?checkoutMode=2&off=m70knns4"
+          onClick="return false;"
+          className="hotmart-fb hotmart__button-checkout mt-4 block w-full rounded-full py-5 text-center text-sm font-black tracking-widest uppercase text-white animate-breathe active:scale-95 cursor-pointer"
           style={{
+            backgroundColor: "rgb(71,150,120)",
             boxShadow:
               "0 0 18px rgba(71,150,120,0.55), 0 0 40px rgba(71,150,120,0.30), 0 0 70px rgba(71,150,120,0.15)",
           }}
         >
           Escreva sua história
-        </button>
+        </a>
       </div>
     </section>
   );
