@@ -22,7 +22,7 @@ const faqs = [
   {
     question: "Como acesso o treinamento?",
     answer:
-      "Após a confirmação da compra, você receberá um e-mail da Hotmart com todas as instruções de acesso. Basta criar (ou entrar na) sua conta na plataforma e, em poucos cliques, o curso A Jornada do Escritor estará disponível na sua área de membros. Lá, você poderá assistir às aulas e acompanhar as atualizações do treinamento de forma prática e segura, pelo computador ou celular.",
+      "Após a confirmação da compra, você receberá um e-mail da Hotmart com todas as instruções de acesso. Basta criar (ou entrar na) sua conta na plataforma e, em poucos cliques, o curso 'De leitor a escritor' estará disponível na sua área de membros. Lá, você poderá assistir às aulas e acompanhar as atualizações do treinamento de forma prática e segura, pelo computador ou celular.",
   },
 ];
 

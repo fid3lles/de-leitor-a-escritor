@@ -199,7 +199,8 @@ export default function Modules() {
             <div className="h-105 w-full">
               <img
                 src={professora}
-                alt="Heloísa Karin"
+                alt="Heloísa Karin, escritora da Thomas Nelson Brasil e professora do curso De Leitor a Escritor"
+                loading="lazy"
                 className="h-full w-full object-cover object-top"
               />
             </div>
