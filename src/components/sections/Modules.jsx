@@ -63,7 +63,7 @@ function ModuleCard({ title, description, index, className = "" }) {
   return (
     <div
       ref={ref}
-      className={`relative z-10 w-full rounded-2xl bg-module-card px-6 py-5 shadow-[0_6px_20px_rgba(0,0,0,0.35)] text-center transition-all duration-700 ease-out ${className}`}
+      className={`relative z-10 flex h-full w-full flex-col justify-center rounded-2xl bg-module-card px-6 py-5 shadow-[0_6px_20px_rgba(0,0,0,0.35)] text-center transition-all duration-700 ease-out ${className}`}
       style={{
         opacity: visible ? 1 : 0,
         transform: visible ? "translateY(0)" : "translateY(20px)",
