@@ -6,7 +6,7 @@ const modules = [
   {
     title: "Para onde sua ideia vai te levar?",
     description:
-      "Um módulo onde destrinchamos os primeiros passos da escrita: por que muitas pessoas tem ideias, mas não escrevem seus livros, como pensar na carreira da escrita e como idenfiticar uma ideia que pode virar um livro.",
+      "Um módulo onde destrinchamos os primeiros passos da escrita: por que muitas pessoas têm ideias, mas não escrevem seus livros, como pensar na carreira da escrita e como idenfiticar uma ideia que pode virar um livro.",
   },
   {
     title: "Deixando a ideia robusta",
@@ -16,7 +16,7 @@ const modules = [
   {
     title: "Construção de personagens",
     description:
-      "Um módulo onde destrinchamos a criação de perssonagens para que sua história seja marcante por meio da trajetória deles.",
+      "Um módulo onde destrinchamos a criação de personagens para que sua história seja marcante por meio da trajetória deles.",
   },
   {
     title: "Construção de mundo",
