@@ -46,16 +46,6 @@ export default function Pricing() {
     return () => observer.disconnect();
   }, []);
 
-  // Carrega o widget da Hotmart DEPOIS que o botão já está no DOM,
-  // para que o jQuery('.hotmart-fb').fancybox() encontre o link e
-  // abra o checkout em modal (e não em uma nova janela).
-  useEffect(() => {
-    if (document.querySelector('script[src*="checkout/widget.min.js"]')) return;
-    const script = document.createElement("script");
-    script.src = "https://static.hotmart.com/checkout/widget.min.js";
-    document.head.appendChild(script);
-  }, []);
-
   return (
     <section
       ref={sectionRef}
@@ -108,10 +98,11 @@ export default function Pricing() {
           </div>
         </div>
 
-        {/* CTA button */}
+        {/* CTA button — não usar o widget.min.js da Hotmart: o health check
+            dele falha e ele remove todo link para hotmart.com da página. */}
         <a
-          href="https://pay.hotmart.com/B105616878D?off=m70knns4&checkoutMode=10"
-          className="buy hotmart-fb hotmart__button-checkout mt-4 block w-full rounded-full py-5 text-center text-sm font-black tracking-widest uppercase text-white animate-breathe active:scale-95 cursor-pointer"
+          href="https://pay.hotmart.com/B105616878D?off=m70knns4"
+          className="mt-4 block w-full rounded-full py-5 text-center text-sm font-black tracking-widest uppercase text-white animate-breathe active:scale-95 cursor-pointer"
           style={{
             backgroundColor: "rgb(71,150,120)",
             boxShadow:
